@@ -1,7 +1,7 @@
 {
   "name": "MEDIA-EDITOR-BOT",
   "description": "Bot edit or replace Media's From channel post's",
-  "repository": "https://github.com/Jack-of-tg/MEDIA-EDITOR-BOT",
+  "repository": "https://github.com/prxpostern/MEDIA-EDITOR-BOT",
   "keywords": ["MEDIA-EDITOR-BOT", "file or media", "edit","telegram bot"],
   "env": {
      "TG_BOT_TOKEN": {

@@ -33,6 +33,15 @@ async def media(client, message):
     try:
         a = await client.ask(message.chat.id,'Now send me the link of the message of the channnel that you need to edit',
                     filters=filters.text, timeout=30)
+    except TimeoutError:
+        await message.reply_text(
+            "```Session Timed Out.Resend the file to Start again```",
+            parse_mode="md",
+            quote=True
+        )
+        return
+    
+    try:
         b = await client.ask(message.chat.id,'Now send me Duration:',
                     filters=filters.text, timeout=30)
     except TimeoutError:

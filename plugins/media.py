@@ -47,7 +47,7 @@ async def media(client, message):
     if  message.video:
         duration = int(b.text)
         file_id = message.video.file_id
-        mid = InputMediaVideo(file_id, caption=message.caption and message.caption.htmlو duration=duration)
+        mid = InputMediaVideo(file_id, caption=message.caption and message.caption.html, duration=duration)
             
          
     a = "-100"

@@ -34,7 +34,7 @@ async def start(client, message):
         text=START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text="OWNER",url = "t.me/jack_of_tg")]]),
-        reply_to_message_id=message.message_id
+        reply_to_message_id=message.id
     )    
 
 
@@ -44,5 +44,5 @@ async def help(client, message):
     await message.reply_text(
         text=HELP_MSG,
         disable_web_page_preview=True,
-        reply_to_message_id=message.message_id
+        reply_to_message_id=message.id
     )    

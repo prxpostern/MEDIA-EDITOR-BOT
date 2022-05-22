@@ -1,8 +1,7 @@
 from pyrogram import Client, filters
 from pyromod import listen
 from pyrogram.errors import UserNotParticipant
-from pyrogram.types import InputMediaPhoto,InputMediaDocument,InputMediaVideo,InputMediaAnimation,InputMediaAudio
-import pyrogram.types.ChatPrivileges
+from pyrogram.types import InputMediaPhoto,InputMediaDocument,InputMediaVideo,InputMediaAnimation,InputMediaAudio,ChatPrivileges
 from asyncio import TimeoutError
 PACK = filters.animation | filters.document| filters.video|filters.audio |filters.photo
 

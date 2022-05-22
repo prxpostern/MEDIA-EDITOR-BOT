@@ -58,9 +58,9 @@ async def media(client, message):
      except UserNotParticipant:
           await message.reply("It seems you are not a member of this channel and hence you can't do this action.")
           return
-     if not is_admin.can_edit_messages:
+     '''if not is_admin.can_edit_messages:
         await message.reply("You are not permited to do this, since you do not have the right to edit posts in this channel.")
-        return
+        return'''
             
      try:
         await client.edit_message_media(
